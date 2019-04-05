@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Restangular} from "ngx-restangular";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular-Cli';
+  party = {};
+    constructor(private restangular: Restangular) {
+    }
+
+
+
+    ngOnInit() {
+        this.restangular.one('parties', 171).get().subscribe(party =>
+            
+            {this.party = party;
+                console.log('cats');}
+
+        );
+    }
 }
