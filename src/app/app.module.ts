@@ -22,7 +22,7 @@ import { IngotBaseModule } from "./ingot-base/ingot-base.module";
               }
           );
       }),
-      UIRouterModule.forRoot({ states: [ ], useHash: true }),
+      UIRouterModule.forRoot({ states: [ ], useHash: true, otherwise: '/' }),
       IngotBaseModule
   ],
   providers: [],

@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { UIRouterModule } from "@uirouter/angular";
 
-import * as routes from "./dashboard.routes";
+import {dashboardRoutes} from "./dashboard.routes";
 
 import { DashboardComponent } from './dashboard.component';
 
@@ -11,7 +11,7 @@ import { DashboardComponent } from './dashboard.component';
   declarations: [DashboardComponent],
   imports: [
       CommonModule,
-      UIRouterModule.forChild({ states: [ routes.dashboard ] }),
+      UIRouterModule.forChild({ states: dashboardRoutes }),
   ]
 })
 export class DashboardModule { }

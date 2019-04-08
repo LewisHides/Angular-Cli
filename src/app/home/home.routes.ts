@@ -1,7 +1,9 @@
 import {HomeComponent} from "./home.component";
 
-export var ingotHomeState = {
-    name: 'ingot.home',
-    url: 'home',
-    component: HomeComponent
-};
+export var homeRoutes = [
+    {
+        name: 'ingot.home',
+        url: '/',
+        component: HomeComponent
+    }
+];

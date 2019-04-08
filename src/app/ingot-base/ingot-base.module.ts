@@ -6,13 +6,14 @@ import {UIRouterModule} from "@uirouter/angular";
 import { HomeModule } from "../home/home.module";
 import {DashboardModule} from "../dashboard/dashboard.module";
 
-import * as routes from "./ingot-base.routes";
+import {ingotBaseRoutes} from "./ingot-base.routes";
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
-  declarations: [IngotBaseComponent],
+  declarations: [IngotBaseComponent, NavbarComponent],
   imports: [
       CommonModule,
-      UIRouterModule.forChild({ states: [ routes.ingotBaseState ] }),
+      UIRouterModule.forChild({ states: ingotBaseRoutes }),
 
       HomeModule,
       DashboardModule

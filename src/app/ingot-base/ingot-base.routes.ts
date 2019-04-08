@@ -1,3 +1,8 @@
 import {IngotBaseComponent} from "./ingot-base.component";
 
-export var ingotBaseState = { name: 'ingot', url: '/',  component: IngotBaseComponent };
+export var ingotBaseRoutes = [
+    {
+        name: 'ingot',
+        component: IngotBaseComponent
+    }
+];
