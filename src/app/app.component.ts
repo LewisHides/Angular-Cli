@@ -7,18 +7,19 @@ import {Restangular} from "ngx-restangular";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Angular-Cli';
-  party = {};
+
+  title = 'Ingot Portal';
 
     constructor(private restangular: Restangular) {
     }
 
     ngOnInit() {
-        this.restangular.one('parties', 171).get().subscribe(party =>
+        console.log('APP COMPONENT LOADED');
+        /*this.restangular.one('parties', 171).get().subscribe(party =>
             {
                 this.party = party;
                 console.log(party);
             }
-        );
+        );*/
     }
 }

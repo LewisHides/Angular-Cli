@@ -1,9 +1,12 @@
+//Angular Imports
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
+//3rd Party Library Imports
+import { UIRouterModule } from "@uirouter/angular";
+import { RestangularModule } from "ngx-restangular";
+//Application Imports
 import { AppComponent } from './app.component';
-import {RestangularModule} from "ngx-restangular";
+import { IngotBaseModule } from "./ingot-base/ingot-base.module";
 
 @NgModule({
   declarations: [
@@ -11,7 +14,6 @@ import {RestangularModule} from "ngx-restangular";
   ],
   imports: [
       BrowserModule,
-      AppRoutingModule,
       RestangularModule.forRoot((RestangularProvider) => {
           RestangularProvider.setBaseUrl('http://api.ingotportal.local/app_dev.php/api/v1');
           RestangularProvider.setDefaultHeaders(
@@ -20,6 +22,8 @@ import {RestangularModule} from "ngx-restangular";
               }
           );
       }),
+      UIRouterModule.forRoot({ states: [ ], useHash: true }),
+      IngotBaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
