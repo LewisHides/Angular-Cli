@@ -13,14 +13,13 @@ import {RestangularModule} from "ngx-restangular";
       BrowserModule,
       AppRoutingModule,
       RestangularModule.forRoot((RestangularProvider) => {
-              RestangularProvider.setBaseUrl('http://api.ingotportal.local/app_dev.php/api/v1');
-              RestangularProvider.setDefaultHeaders(
-                  {
-                      'Authorization': 'Bearer eyJhbGciOiJSUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX1VTRVIiXSwidXNlcm5hbWUiOiJsZXdpcy5oaWRlc0B3YXJyYW50LWdyb3VwLmNvbSIsImlwIjoiOjoxIiwiZXhwIjoxNTU0NTQ3NzA4LCJpYXQiOjE1NTQ0NjEzMDh9.V7LK91K3aGO1MXpuUZZKEQNBRPqawCwv-s7OYuNNpi61lAyxBla3VuanKiqhFIMlT1B-N5erYzkbhTADc2tDOEtcWqxwvWCT_yUddSz3yesDPJcVQUXVFANcoq6J5EuiJ130R9nE0pD9C0nh27s5Z_sDqJXErNH55bWfOt98aVFXPU5XYjwdns91xKctJfrxhKTb6GtnaVK51AMxu-0GhYM46PsOaVkaG1tdalW7333mFdq6Gw_AJIqoq4A-ac__xV3hTntBGfnH5Lx6y72JxAEqEwNb0BDOARxhN0GCtyacHI8R71xN1Fj9Y_XatqlWq9OJua5HgS488CDVPIvLE5_3ecCtT9J_CpEMalYQaDFflB7i2gJgnT4RwlRg3ex8u7hgktHRcL8MMcWupINVksA0q3a31CTNHCpXJYaqTtloOEtz6JHJqYLVDdBzQpF96X6qF-mry5O4abb3yiayysVeDPYlRSyFxDfVW91aNNdDLreJDCBMhZtAKZ317PqTd8dQXxrVpFA-_qnONo5EVlD4uZjWZ0ZE15jEbFKvU_1tJdLasEWRrqm3i2qhlJ5unowO7GjtBJpaaeN1N1Mx4o3lmWuIyu79ucpMwlAbjHQuVjHKz7F0mVvguSxWawUT0hEteyykUm2AEWpRF1TBZClT25bZYYeBron95Y77Cfs',
-                  }
-              );
-          }
-      ),
+          RestangularProvider.setBaseUrl('http://api.ingotportal.local/app_dev.php/api/v1');
+          RestangularProvider.setDefaultHeaders(
+              {
+                  'Authorization': 'Bearer eyJhbGciOiJSUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX1VTRVIiXSwidXNlcm5hbWUiOiJsZXdpcy5oaWRlc0B3YXJyYW50LWdyb3VwLmNvbSIsImlwIjoiOjoxIiwiZXhwIjoxNTU0NzkxOTQyLCJpYXQiOjE1NTQ3MDU1NDJ9.n_Imqi_IWJeG3LG51rBSTV1D8i9kyF411wmWOm8Ug9WzdQ7xdTDx7i3tz-dpLwj6YjKpEbC6jmjwfYDWpI8RkQ83xkvgNkSb3NKsBiw1LwWiQPpvOdRpg1T6nS8JOAnbsdrAi3hFhQnPpud3pTg96swc9SrCybpDb4Zl0pPzw6WUjDxmYJ-dce6dRQTUs-xDUY5W_eumcnmJ0yY0EXTV79F2c-rFQtNV22RoTBOmsgcWUu3e8XvpSDvEIc9PkuUxVYuMG9yXLakncl7lhOG0MPu3J1vRx7P_PgZsgWzrWL5UD1L_sJXE003ZZSvvLe8bUnLWqbZeH-M9mdpK5OH7xxDrsWeVGgNom65sB4uqj4v7mNXLmFejvJJEujmUscurUIdSpigKqP1_OuzdFyCbtvvEX8KxE1gbgp7EBrcGx0V99ib8grdsf9_NWLaE61UZJP3f-BYua06OXa4gSbhJya7dkwfWsCakmRYOsiGU7tpqBRGnSW2eysQ8L_l2UAlnPdNsSoNhi1sOsLiHVi9M4CDL7bmflJL5ZEizSLBzFO8sMR-22Bj_07X7Wy60di8BCVm5d-Ta1Pedz-XzVmSp9kJ5lZw0D6SqL-Nf48X40YbWNiD0abYYdXWS60vnz5YxZFufn5X-P0g2vBe3ON-Ob4KvW2MBgwYcPVO7fvu8SLA',
+              }
+          );
+      }),
   ],
   providers: [],
   bootstrap: [AppComponent]

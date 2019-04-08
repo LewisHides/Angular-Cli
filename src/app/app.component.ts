@@ -9,17 +9,16 @@ import {Restangular} from "ngx-restangular";
 export class AppComponent {
   title = 'Angular-Cli';
   party = {};
+
     constructor(private restangular: Restangular) {
     }
 
-
-
     ngOnInit() {
         this.restangular.one('parties', 171).get().subscribe(party =>
-            
-            {this.party = party;
-                console.log('cats');}
-
+            {
+                this.party = party;
+                console.log(party);
+            }
         );
     }
 }
