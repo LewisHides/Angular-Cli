@@ -1,16 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {AppConfig} from "../core/config/app-config.service";
 
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss']
+    selector: 'app-dashboard',
+    templateUrl: './dashboard.component.html',
+    styleUrls: ['./dashboard.component.scss']
 })
+
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+    constructor(private config: AppConfig) {
+    }
 
-  ngOnInit() {
-    console.log('DASHBOARD COMPONENT LOADED');
-  }
+    ngOnInit() {
+        var settings = this.config.get();
+    }
 
 }

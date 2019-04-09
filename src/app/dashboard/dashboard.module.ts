@@ -11,7 +11,7 @@ import { DashboardComponent } from './dashboard.component';
   declarations: [DashboardComponent],
   imports: [
       CommonModule,
-      UIRouterModule.forChild({ states: dashboardRoutes }),
+      UIRouterModule.forChild({ states: dashboardRoutes })
   ]
 })
 export class DashboardModule { }

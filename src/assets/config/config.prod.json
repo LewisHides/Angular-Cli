@@ -1,0 +1,38 @@
+{
+  "env": "dev",
+  "baseUrl": "http://ingotportal.local",
+  "api": {
+    "assetUrl": "http://api.ingotportal.local/assets",
+    "baseUrl": "http://api.ingotportal.local/app_dev.php",
+    "apiUrl": "http://api.ingotportal.local/app_dev.php/api/v1",
+    "public": {
+      "key": "B8215A24A5F174AFE87EAFB1673EC"
+    }
+  },
+  "addressbook": {
+    "search": {
+      "type": "db"
+    }
+  },
+  "supportEmail": "it@warrant-group.com",
+  "brands": {
+    "domain": {
+      "ingot-web-staging.s3-website.eu-west-2.amazonaws.com": {
+        "title": "B&M Retail",
+        "name": "<strong>B&M</strong> Retail",
+        "logo": "assets/themes/bmstores/header-logo.png",
+        "theme": {
+          "css": ["assets/themes/bmstores/theme.css"]
+        },
+        "party": {
+          "id": 19491
+        }
+      }
+    },
+    "default": {
+      "title": "Ingot Portal",
+      "logo": "<img class=\"navbar-logo\" src=\"assets/themes/warrant/logo.png\">",
+      "name": "<strong>Ingot</strong> Portal"
+    }
+  }
+}
