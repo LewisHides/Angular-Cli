@@ -1,3 +1,8 @@
+/**
+ * Home Component
+ *
+ * Component to route a user to their relevant Home Route
+ */
 import { Component, OnInit } from '@angular/core';
 import { UIRouterModule, StateService } from "@uirouter/angular";
 

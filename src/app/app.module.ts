@@ -24,8 +24,13 @@ import { IngotBaseModule } from "./ingot-base/ingot-base.module";
           );
       }),
       UIRouterModule.forRoot({ states: [ ], useHash: true, otherwise: '/' }),
-
+      /**
+       * Load the CoreModule (all 'global' components and functionality.)
+       */
       CoreModule,
+      /**
+       * Load the IngotBaseModule - all additional Ingot Specific Modules are loaded from here
+       */
       IngotBaseModule
   ],
   providers: [],
