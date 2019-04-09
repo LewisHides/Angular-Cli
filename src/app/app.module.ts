@@ -6,6 +6,7 @@ import { UIRouterModule } from "@uirouter/angular";
 import { RestangularModule } from "ngx-restangular";
 //Application Imports
 import { AppComponent } from './app.component';
+import { CoreModule } from "./core/core.module";
 import { IngotBaseModule } from "./ingot-base/ingot-base.module";
 
 @NgModule({
@@ -23,6 +24,8 @@ import { IngotBaseModule } from "./ingot-base/ingot-base.module";
           );
       }),
       UIRouterModule.forRoot({ states: [ ], useHash: true, otherwise: '/' }),
+
+      CoreModule,
       IngotBaseModule
   ],
   providers: [],
